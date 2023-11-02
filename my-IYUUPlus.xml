@@ -5,7 +5,7 @@
   <Registry>https://registry.hub.docker.com/r/iyuucn/iyuuplus</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project/>
@@ -19,7 +19,7 @@ IYUU&#x81EA;&#x52A8;&#x8F85;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x76EE;&#x524D;&#x8
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1698933998</DateInstalled>
+  <DateInstalled>1698935179</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -30,5 +30,4 @@ IYUU&#x81EA;&#x52A8;&#x8F85;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x76EE;&#x524D;&#x8
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
-
 </Container>
