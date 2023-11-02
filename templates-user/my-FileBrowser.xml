@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FileBrowser</Name>
+  <Repository>filebrowser/filebrowser</Repository>
+  <Registry>https://hub.docker.com/r/filebrowser/filebrowser</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/78481-support-knex666-filebrowser/</Support>
+  <Project>https://github.com/filebrowser/filebrowser</Project>
+  <Overview>File Browser - Webbased File Browser including sharing functions etc.&#xD;
+&#xD;
+https://github.com/filebrowser/filebrowser&#xD;
+&#xD;
+Just Mount other Folder to/srv&#xD;
+Example&#xD;
+/mnt/user/Media/ &amp;gt; /srv/Media&#xD;
+/mnt/user/Docs/ &amp;gt; /srv/Docs&#xD;
+&#xD;
+Read&#xD;
+https://docs.filebrowser.xyz/configuration for the config</Overview>
+  <Category>Cloud: Network:Web</Category>
+  <WebUI>http://[IP]/files/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/maschhoff/docker/master/unraid%20xml/my-filebrowser.xml</TemplateURL>
+  <Icon>https://github.com/maschhoff/docker/raw/master/filebrowser/35781395.png</Icon>
+  <ExtraParams/>
+  <PostArgs>-d /db/database.db</PostArgs>
+  <CPUset/>
+  <DateInstalled>1675866497</DateInstalled>
+  <DonateText>If you like my work buy me a Pizza ;)</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/maschhoff</DonateLink>
+  <Requires/>
+  <Config Name="Host Path 3" Target="/srv" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
+  <Config Name="Host Path 2" Target="/db/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
+</Container>

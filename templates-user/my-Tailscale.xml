@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tailscale</Name>
+  <Repository>deasmi/unraid-tailscale:latest</Repository>
+  <Registry>https://hub.docker.com/repository/docker/deasmi/unraid-tailscale</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/90719-will-move-to-ca-tailscale-support-thread/</Support>
+  <Project>https://github.com/deasmi/unraid-tailscale</Project>
+  <Overview>Private networks made easy&#xD;
+&#xD;
+Connect all your devices using WireGuard,&#xAE; without the hassle.&#xD;
+Tailscale makes it as easy as installing an app and signing in.&#xD;
+&#xD;
+This container sets up tailscale for unraid.&#xD;
+&#xD;
+It will register as hostname unraid, if you want to change that see 'Extra Parameters' below and change to the hostname you would like.&#xD;
+&#xD;
+** IMPORTANT When you first start this container you must check the log file for the logon URL and then enter it into a browser and logon to tail scale. I would then also advise setting the keys to not expire for your unraid host **&#xD;
+&#xD;
+** Note that this will expose your whole server into your tailscale VPN network ** &#xD;
+Do not do this if you do not understand what that means.</Overview>
+  <Category>Network:VPN spotlight:</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/deasmi/unraid-ca/master/unraid-tailscale.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/deasmi/unraid-tailscale/master/logo.png</Icon>
+  <ExtraParams>--cap-add=NET_ADMIN --hostname=unraid</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1667915666</DateInstalled>
+  <DonateText>If you like my work please consider donating to cancer research at https://www.justgiving.com/fundraising/unraid-tailscale.</DonateText>
+  <DonateLink>https://www.justgiving.com/fundraising/unraid-tailscale</DonateLink>
+  <Requires/>
+  <Config Name="Appdata path" Target="/state" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale</Config>
+  <Config Name="UP_FLAGS" Target="UP_FLAGS" Default="" Mode="" Description="Additional flags to pass to tailscale on startup" Type="Variable" Display="always" Required="false" Mask="false">--advertise-exit-node --accept-dns=false --advertise-routes=192.168.2.0/24</Config>
+  <Config Name="Download path" Target="/downloads" Default="" Mode="rw" Description="Where should files download to." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale/downloads</Config>
+  <Config Name="Enable downloads" Target="ENABLE_DOWNLOADS" Default="FALSE" Mode="" Description="Set to TRUE, and set the download path, if you want to support downloads.&#13;&#10;&#13;&#10;Note: You must manually set tag to above to deasmi/unraid-tailscale:download to support downloads until beta test is finished" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+</Container>

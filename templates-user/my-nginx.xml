@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nginx</Name>
+  <Repository>lscr.io/linuxserver/nginx</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/nginx</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-nginx/issues/new/choose</Support>
+  <Project>https://nginx.org/</Project>
+  <Overview>Nginx(https://nginx.org/) is a simple webserver with php support. The config files reside in `/config` for easy user customization.</Overview>
+  <Category>Network:Web Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/nginx.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/nginx-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1698890468</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="80" Mode="tcp" Description="http" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Port: 443" Target="443" Default="443" Mode="tcp" Description="https" Type="Port" Display="always" Required="true" Mask="false">1443</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/nginx" Mode="rw" Description="Contains your www content and all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/nginx</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
