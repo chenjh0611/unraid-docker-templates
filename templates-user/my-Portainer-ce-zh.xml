@@ -15,11 +15,11 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:9000]</WebUI>
   <TemplateURL/>
-  <Icon>nav.skyheng.com/img/png2/PortainerCI.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Portainer_B.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1698937747</DateInstalled>
+  <DateInstalled>1698942672</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
