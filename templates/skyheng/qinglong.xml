@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qinglong</Name>
+  <Repository>whyour/qinglong:latest</Repository>
+  <Registry>https://hub.docker.com/r/whyour/qinglong</Registry>
+  <Network>br0</Network>
+  <MyIP>10.10.10.249</MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>qinglong</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5700]</WebUI>
+  <TemplateURL/>
+  <Icon>https://img.drixn.com/20211027/762f8a0804d95.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638454733</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>qinglong</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5800</HostPort>
+        <ContainerPort>5700</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/config</HostDir>
+      <ContainerDir>/ql/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/log</HostDir>
+      <ContainerDir>/ql/log</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/db</HostDir>
+      <ContainerDir>/ql/db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/repo</HostDir>
+      <ContainerDir>/ql/repo</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/raw</HostDir>
+      <ContainerDir>/ql/raw</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/scripts</HostDir>
+      <ContainerDir>/ql/scripts</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/ql/jbot</HostDir>
+      <ContainerDir>/ql/jbot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="CONFIG" Target="/ql/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/config</Config>
+  <Config Name="LOG" Target="/ql/log" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/log" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/log</Config>
+  <Config Name="DB" Target="/ql/db" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/db" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/db</Config>
+  <Config Name="REPO" Target="/ql/repo" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/repo" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/repo</Config>
+  <Config Name="RAW" Target="/ql/raw" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/raw" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/raw</Config>
+  <Config Name="SCRIPTS" Target="/ql/scripts" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/scripts" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/scripts</Config>
+  <Config Name="JBOT" Target="/ql/jbot" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/jbot" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ql/jbot</Config>
+  <Config Name="WEB_PORT" Target="5700" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5700" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
+</Container>

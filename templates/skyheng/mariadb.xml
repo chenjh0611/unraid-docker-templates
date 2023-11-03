@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mariadb</Name>
+  <Repository>lscr.io/linuxserver/mariadb</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/mariadb</Registry>
+  <Network>nsproxy</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-mariadb/issues/new/choose</Support>
+  <Project>https://mariadb.org/</Project>
+  <Overview>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Overview>
+  <Category>Network:Other MediaApp:Other Other: Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:3306]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/mariadb.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mariadb-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646809528</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Mariadb(https://mariadb.org/) is one of the most popular database servers. Made by the original developers of MySQL.</Description>
+  <Networking>
+    <Mode>nsproxy</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/mariadb</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>ezsbDMAQ</Value>
+      <Name>MYSQL_ROOT_PASSWORD</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>demo</Value>
+      <Name>MYSQL_DATABASE</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>demo</Value>
+      <Name>MYSQL_USER</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>1zRgt7dQ</Value>
+      <Name>MYSQL_PASSWORD</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>http://URL1/your.sql,https://URL2/your.sql</Value>
+      <Name>REMOTE_SQL</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+    <Variable>
+      <Value>022</Value>
+      <Name>UMASK</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="WebUI" Target="3306" Default="3306" Mode="tcp" Description="Mariadb listens on this port." Type="Port" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="MYSQL_ROOT_PASSWORD" Target="MYSQL_ROOT_PASSWORD" Default="ROOT_ACCESS_PASSWORD" Mode="{3}" Description="Set this to root password for installation (minimum 4 characters)." Type="Variable" Display="always" Required="true" Mask="true">M78i1vUI@Gz"y&gt;m(</Config>
+  <Config Name="MYSQL_DATABASE" Target="MYSQL_DATABASE" Default="USER_DB_NAME" Mode="{3}" Description="Specify the name of a database to be created on image startup." Type="Variable" Display="always" Required="false" Mask="false">demo</Config>
+  <Config Name="MYSQL_USER" Target="MYSQL_USER" Default="MYSQL_USER" Mode="{3}" Description="This user will have superuser access to the database specified by MYSQL_DATABASE (do not use root here)." Type="Variable" Display="always" Required="false" Mask="false">demo</Config>
+  <Config Name="MYSQL_PASSWORD" Target="MYSQL_PASSWORD" Default="DATABASE_PASSWORD" Mode="{3}" Description="Set this to the password you want to use for you MYSQL_USER (minimum 4 characters)." Type="Variable" Display="always" Required="false" Mask="true">1q2w3e--</Config>
+  <Config Name="REMOTE_SQL" Target="REMOTE_SQL" Default="http://URL1/your.sql,https://URL2/your.sql" Mode="{3}" Description="Set this to ingest sql files from an http/https endpoint (comma seperated array)." Type="Variable" Display="always" Required="false" Mask="false">http://URL1/your.sql,https://URL2/your.sql</Config>
+  <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains the db itself and all assorted settings." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/mariadb</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

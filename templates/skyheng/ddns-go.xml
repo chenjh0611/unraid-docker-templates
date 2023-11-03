@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-go</Name>
+  <Repository>drixn/ddns-go</Repository>
+  <Registry>https://hub.docker.com/r/drixn/ddns-go</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9875]</WebUI>
+  <TemplateURL/>
+  <Icon>https://img.drixn.com/20211129/a02b0ec407ba8.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1687847547</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="CONFIG_PATH" Target="/root" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /root" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-go</Config>
+</Container>
