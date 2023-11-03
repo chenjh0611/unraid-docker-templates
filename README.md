@@ -9,3 +9,6 @@ Unraid Docker安装模板
 [](https://github.com/Drixn0/docker-templates)
 
 [](https://github.com/MyFaith/unraid-templates)
+
+
+[](https://github.com/linuxserver/templates/tree/main/unraid)
