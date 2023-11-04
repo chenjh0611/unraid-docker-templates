@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Qinglong</Name>
+  <Repository>whyour/qinglong:latest</Repository>
+  <Registry>https://hub.docker.com/r/whyour/qinglong</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Project>https://github.com/whyour/qinglong</Project>
+  <Overview>&#xD;
+    &#x5E94;&#x7528;&#x4ECB;&#x7ECD;&#xD;
+&#xD;
+    Qinglong(&#x9752;&#x9F99;)&#x662F;&#x4E00;&#x4E2A;&#x652F;&#x6301;python3&#x3001;javaScript&#x3001;shell&#x3001;typescript &#x7684;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;&#x7BA1;&#x7406;&#x9762;&#x677F;&#x3002;&#xD;
+&#xD;
+&#xD;
+    &#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xD;
+&#xD;
+    https://github.com/whyour/qinglong&#xD;
+&#xD;
+&#xD;
+  </Overview>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5800]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/Qinglong.xml</TemplateURL>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qinglong_A.png</Icon>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699105276</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI &#x7AEF;&#x53E3;" Target="5700" Default="" Mode="tcp" Description="&#x7528;&#x4E8E;&#x8BBF;&#x95EE; Qinglong &#x9762;&#x677F; WebUI" Type="Port" Display="always" Required="true" Mask="false">5800</Config>
+  <Config Name="config &#x8DEF;&#x5F84;" Target="/ql/config" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; qinglong &#x914D;&#x7F6E;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/config</Config>
+  <Config Name="log &#x8DEF;&#x5F84;" Target="/ql/log" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/log&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; qinglong &#x65E5;&#x5FD7;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/log</Config>
+  <Config Name="db &#x8DEF;&#x5F84;" Target="/ql/db" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/db&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; qinglong &#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/db</Config>
+  <Config Name="repo &#x8DEF;&#x5F84;" Target="/ql/repo" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/repo&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x811A;&#x672C;&#x4ED3;&#x5E93;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/repo</Config>
+  <Config Name="raw &#x8DEF;&#x5F84;" Target="/ql/raw" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/raw&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x539F;&#x59CB;&#x811A;&#x672C;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/raw</Config>
+  <Config Name="ninja &#x8DEF;&#x5F84;" Target="/ql/ninja" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/ninja&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x811A;&#x672C;&#x4ED3;&#x5E93;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/ninja</Config>
+  <Config Name="scripts &#x8DEF;&#x5F84;" Target="/ql/scripts" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/scripts&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x811A;&#x672C;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/scripts</Config>
+  <Config Name="jbot &#x8DEF;&#x5F84;" Target="/ql/jbot" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /ql/jbot&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x673A;&#x5668;&#x4EBA;&#x76F8;&#x5173;&#x914D;&#x7F6E;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qinglong/jbot</Config>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; qinglong &#x7684;&#x7528;&#x6237; ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C;  qinglong &#x7684;&#x7528;&#x6237;&#x7EC4; ID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>
