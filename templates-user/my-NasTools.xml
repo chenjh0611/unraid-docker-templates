@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NasTools</Name>
+  <Repository>nastool/nas-tools:latest</Repository>
+  <Registry>https://hub.docker.com/r/nastool/nas-tools</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Project>https://github.com/nastool/nas-tools</Project>
+  <Overview>&#x5E94;&#x7528;&#x4ECB;&#x7ECD;&#xD;
+NasTools &#x662F;&#x4E00;&#x4E2A; NAS &#x5A92;&#x4F53;&#x5E93;&#x8D44;&#x6E90;&#x5F52;&#x96C6;&#x6574;&#x7406;&#x5DE5;&#x5177;&#x3002;&#xD;
+&#xD;
+&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xD;
+https://wiki.nastool.org&#xD;
+&#xD;
+Github&#xFF1A;https://github.com/NAStool/nas-tools&#xD;
+&#xD;
+&#xD;
+  </Overview>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/NasTools.xml</TemplateURL>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Nastools_B.png</Icon>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699071434</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI &#x7AEF;&#x53E3;" Target="3000" Default="" Mode="tcp" Description="&#x7528;&#x4E8E;&#x8BBF;&#x95EE; nas-tools &#x7BA1;&#x7406;&#x754C;&#x9762;" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="config &#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/nastools" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; nas-tools &#x914D;&#x7F6E;&#x6587;&#x4EF6;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/nastools</Config>
+  <Config Name="&#x662F;&#x5426;&#x81EA;&#x52A8;&#x66F4;&#x65B0;" Target="NASTOOL_AUTO_UPDATE" Default="false|true" Mode="" Description="&#x5982;&#x9700;&#x5728;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;&#x81EA;&#x52A8;&#x5347;&#x7EA7;&#x7A0B;&#x7A0B;&#x5E8F;&#x8BF7;&#x8BBE;&#x7F6E;&#x4E3A; true" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/pt" Default="" Mode="rw" Description="&#x5C06;&#x5BBF;&#x4E3B;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /mnt&#xFF0C;&#x53EF;&#x70B9;&#x51FB; EDIT &#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF1B;&#x5982;&#x6709;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x9700;&#x6620;&#x5C04;&#x8BF7;&#x70B9;&#x51FB;&#x4E0B;&#x65B9; Add another Path &#x6DFB;&#x52A0; Path &#x7C7B;&#x578B;&#x914D;&#x7F6E;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="Path: /adults" Target="/adults" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path: /skyhawk4t" Target="/mnt/skyhawk4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Path: /ironwolf4t" Target="/mnt/ironwolf4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; nas-tools &#x7684;&#x7528;&#x6237; ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C;  nas-tools &#x7684;&#x7528;&#x6237;&#x7EC4; ID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="&#x7528;&#x6237;&#x63A9;&#x7801;&#x6743;&#x9650;" Target="UMASK" Default="" Mode="" Description="&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x63A9;&#x7801;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x719F;&#x6089; linux &#x6743;&#x9650;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E; 022" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
