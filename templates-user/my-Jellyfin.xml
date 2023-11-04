@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jellyfin</Name>
+  <Repository>nyanmisaka/jellyfin</Repository>
+  <Registry>https://registry.hub.docker.com/r/nyanmisaka/jellyfin</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:8097]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Jellyfin_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699105914</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="8096" Default="" Mode="tcp" Description="http port" Type="Port" Display="always" Required="true" Mask="false">8097</Config>
+  <Config Name="Host Port 2" Target="8920" Default="" Mode="tcp" Description="https port" Type="Port" Display="always" Required="true" Mask="false">8921</Config>
+  <Config Name="dlna1" Target="7359" Default="" Mode="udp" Description="local network discovery" Type="Port" Display="always" Required="false" Mask="false">7360</Config>
+  <Config Name="dlna2" Target="1900" Default="" Mode="udp" Description="dlna" Type="Port" Display="always" Required="false" Mask="false">1901</Config>
+  <Config Name="media path" Target="/pt" Default="/mnt/user/pt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="Container Device: /dev/dri" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
+  <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+</Container>
