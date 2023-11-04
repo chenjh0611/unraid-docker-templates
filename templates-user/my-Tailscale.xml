@@ -30,7 +30,7 @@ Do not do this if you do not understand what that means.</Overview>
   <ExtraParams>--cap-add=NET_ADMIN --hostname=unraid</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1667915666</DateInstalled>
+  <DateInstalled>1699026861</DateInstalled>
   <DonateText>If you like my work please consider donating to cancer research at https://www.justgiving.com/fundraising/unraid-tailscale.</DonateText>
   <DonateLink>https://www.justgiving.com/fundraising/unraid-tailscale</DonateLink>
   <Requires/>

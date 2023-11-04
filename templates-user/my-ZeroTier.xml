@@ -22,7 +22,7 @@
   <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1665846678</DateInstalled>
+  <DateInstalled>1699027163</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
