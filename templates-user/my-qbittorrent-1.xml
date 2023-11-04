@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent-1</Name>
+  <Repository>lscr.io/linuxserver/qbittorrent</Repository>
+  <Registry>https://github.com/orgs/linuxserver/packages/container/package/qbittorrent</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/linuxserver/docker-qbittorrent/issues/new/choose</Support>
+  <Project>https://www.qbittorrent.org/</Project>
+  <Overview>The Qbittorrent(https://www.qbittorrent.org/) project aims to provide an open-source software alternative to &#xB5;Torrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/master/unraid/qbittorrent.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699030876</DateInstalled>
+  <DonateText>Donations</DonateText>
+  <DonateLink>https://www.linuxserver.io/donate</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">18080</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">16881</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">16881</Config>
+  <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/qbittorrent</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="for changing the port of the webui, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false">18080</Config>
+  <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/qbittorrent-1" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/qbittorrent-1</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

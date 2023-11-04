@@ -12,3 +12,16 @@ Unraid Docker安装模板
 
 
 [](https://github.com/linuxserver/templates/tree/main/unraid)
+
+
+[](https://github.com/binhex/docker-templates/tree/master/binhex)
+
+
+[](https://github.com/selfhosters/unRAID-CA-templates/tree/master/templates)
+
+
+
+[](https://github.com/shuosiw/unraid)
+
+
+[](https://github.com/xinjiawei/unraidtemplates)

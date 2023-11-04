@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Portainer-ce</Name>
+  <Name>Portainer</Name>
   <Repository>portainer/portainer-ce</Repository>
   <Registry>https://registry.hub.docker.com/r/portainer/portainer-ce</Registry>
   <Network>bridge</Network>
