@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>ZeroTier</Name>
+  <Description>
+    Zerotier is an open source, cross-platform virtual LAN / VPN. [br]
+    It allows remote access to devices as if they all reside in the same local network. [br]
+    All traffic is encrypted end-to-end and takes the most direct path available for minimum latency and maximum performance, using VPN-like connections. [br]
+    After installing Zerotier on unRaid and any other devices - a VPN connection will be set up and all connected devices will be available to each other like they are in the same network. [br]
+    SMB shares, TimeMachine will be autodetected and UIs will be accessible on regular hostnames and ports. [br]
+    [b]Configuraion[/b] [br]
+    See the first post of the Support page for documentation: https://forums.unraid.net/topic/72030-support-spikhalskiy-zerotier/ [br] 
+  </Description>
+  <Overview>
+    Zerotier is an open source, cross-platform virtual LAN / VPN
+  </Overview>
+  <Project>https://www.zerotier.com/</Project>
+  <Support>https://forums.unraid.net/topic/72030-support-spikhalskiy-zerotier/</Support>
+  <Registry>https://registry.hub.docker.com/u/spikhalskiy/zerotier/</Registry>
+  <GitHub>https://github.com/Spikhalskiy/zerotier-unraid-docker.git</GitHub>
+  <Repository>spikhalskiy/zerotier</Repository>
+  <BaseImage>alpine:edge</BaseImage>
+  <WebUI></WebUI>
+  <Banner>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Banner>
+  <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:DNS Network:Management Network:VPN</Category>
+  <Date>2023-08-26</Date>
+  <Version>1.12.0</Version>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <!-- Variable Mappings -->
+  <Config Name="Network ID" Target="NETWORK_ID" Default="" Mode="" Description="Network ID of ZeroTier network to join, could be find on page: https://my.zerotier.com/network" Type="Variable" Display="always-hide" Required="true" Mask="false"/>
+  <!-- Volume Mappings -->
+  <Config Name="Config Directory" Target="/var/lib/zerotier-one" Default="/mnt/user/appdata/zerotier/zerotier-one" Mode="rw" Description="Path to persist ZeroTier state across restarts of the container. If you don't bind this ZeroTier will generate a new identity every time." Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
+  <Changes>
+    [font size=4]2023.08.24[/font]
+    - Update to Zerotier 1.12.0
+
+    [font size=4]2022.11.07[/font]
+    - Update to Zerotier 1.10.2
+
+    [font size=4]2021.11.14[/font]
+    - Update to Zerotier 1.8.2
+    
+    [font size=4]2021.09.28[/font]
+    - Update to Zerotier 1.6.6
+
+    [font size=4]2021.05.03[/font]
+    - Update to Zerotier 1.6.5
+
+    [font size=4]2020.12.04[/font]
+    - Update to Zerotier 1.6.2
+
+    [font size=4]2019.09.14[/font]
+    - Update to Zerotier 1.4.6
+
+    [font size=4]2019.08.16[/font]
+    - Update to Zerotier 1.2.12
+
+    [font size=4]2018.06.04[/font]
+    - Initial Release with Zerotier 1.2.4
+  </Changes>
+</Containers>
