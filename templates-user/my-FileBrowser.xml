@@ -42,15 +42,15 @@
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699152458</DateInstalled>
+  <DateInstalled>1699165853</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; FBE &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; FBE &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C; FBE &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;&#x7EC4;" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;" Target="WEB_PORT" Default="" Mode="" Description="WebUI &#x7684;&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;" Type="Variable" Display="always" Required="false" Mask="false">8082</Config>
   <Config Name="&#x662F;&#x5426;&#x542F;&#x7528; SSL" Target="SSL" Default="off|on" Mode="" Description="&#x662F;&#x5426;&#x542F;&#x7528; SSL &#x8BBF;&#x95EE;&#xFF0C;&#x9700;&#x914D;&#x7F6E;&#x8BC1;&#x4E66;" Type="Variable" Display="always" Required="false" Mask="false">off</Config>
-  <Config Name="&#x6587;&#x4EF6;&#x6743;&#x9650;&#x63A9;&#x7801;" Target="UMASK_SET" Default="" Mode="" Description="&#x6587;&#x4EF6;&#x6743;&#x9650;&#x63A9;&#x7801;&#xFF0C;&#x53EF;&#x53C2;&#x8003;&#x5B66;&#x4E60;&#xFF1A;https://cloud.tencent.com/developer/article/1614021" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="&#x6587;&#x4EF6;&#x6743;&#x9650;&#x63A9;&#x7801;" Target="UMASK_SET" Default="" Mode="" Description="&#x6587;&#x4EF6;&#x6743;&#x9650;&#x63A9;&#x7801;&#xFF0C;&#x53EF;&#x53C2;&#x8003;&#x5B66;&#x4E60;&#xFF1A;https://cloud.tencent.com/developer/article/1614021" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
   <Config Name="&#x9700;&#x8981;&#x901A;&#x8FC7; FBE &#x7BA1;&#x7406;&#x7684;&#x76EE;&#x5F55;" Target="/myfiles" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /myfiles" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/</Config>
   <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/FileBrowserEnhanced" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; FBE &#x914D;&#x7F6E;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filebrowser/</Config>
 </Container>
