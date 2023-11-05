@@ -26,7 +26,7 @@ Github&#xFF1A;https://github.com/NAStool/nas-tools&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699077467</DateInstalled>
+  <DateInstalled>1699166178</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -37,7 +37,7 @@ Github&#xFF1A;https://github.com/NAStool/nas-tools&#xD;
   <Config Name="Path: /adults" Target="/adults" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
   <Config Name="Path: /skyhawk4t" Target="/mnt/skyhawk4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
   <Config Name="Path: /ironwolf4t" Target="/mnt/ironwolf4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>
-  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; nas-tools &#x7684;&#x7528;&#x6237; ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; nas-tools &#x7684;&#x7528;&#x6237; ID" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
   <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C;  nas-tools &#x7684;&#x7528;&#x6237;&#x7EC4; ID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="&#x7528;&#x6237;&#x63A9;&#x7801;&#x6743;&#x9650;" Target="UMASK" Default="" Mode="" Description="&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x7528;&#x6237;&#x63A9;&#x7801;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x719F;&#x6089; linux &#x6743;&#x9650;&#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E; 022" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
