@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent-new</Name>
+  <Repository>lscr.io/linuxserver/qbittorrent:4.4.5</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7781]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qbittorrent_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699032034</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">7781</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">16881</Config>
+  <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">16881</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">7781</Config>
+  <Config Name="config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorren-new</Config>
+  <Config Name="downloads" Target="/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/qbittorrent</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
