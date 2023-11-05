@@ -1,157 +1,38 @@
 <?xml version="1.0"?>
-<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
-<!-- GENERATED FROM https://github.com/linuxserver/docker-qbittorrent/blob/master/readme-vars.yml -->
 <Container version="2">
-    <Name>qbittorrent</Name>
-    <Repository>lscr.io/linuxserver/qbittorrent</Repository>
-    <Registry>https://github.com/orgs/linuxserver/packages/container/package/qbittorrent</Registry>
-    <DonateText>Donations</DonateText>
-    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
-    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
-    <Network>bridge</Network>
-    <Privileged>false</Privileged>
-    <Support>https://github.com/linuxserver/docker-qbittorrent/issues/new/choose</Support>
-    <Shell>bash</Shell>
-    <GitHub>https://github.com/linuxserver/docker-qbittorrent#application-setup</GitHub>
-    <ReadMe>https://github.com/linuxserver/docker-qbittorrent#readme</ReadMe>
-    <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable qbittorrent releases</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>libtorrentv1</Tag>
-        <TagDescription>Static qbittorrent builds using libtorrent v1</TagDescription>
-        <ReadMe>https://github.com/linuxserver/docker-qbittorrent/tree/libtorrentv1#readme</ReadMe>
-        <GitHub>https://github.com/linuxserver/docker-qbittorrent/tree/libtorrentv1#application-setup</GitHub>
-    </Branch>
-    <Project>https://www.qbittorrent.org/</Project>
-    <Overview>The Qbittorrent(https://www.qbittorrent.org/) project aims to provide an open-source software alternative to ÂµTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
-    <WebUI>http://[IP]:[PORT:8080]</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
-    <!-- Ìæ»»¹Ù·½µÄÍ¼±ê -->
-    <!-- <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon> -->
-    <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qbittorrent_A.png</Icon>
-    <Date>2023-10-07</Date>
-    <Changes>
-### 2023-10-07
-- Install unrar from linuxserver repo(https://github.com/linuxserver/docker-unrar).
-
-### 2023-08-10
-- Bump unrar to 6.2.10.
-
-### 2023-06-17
-- Deprecate armhf as per https://www.linuxserver.io/armhf(https://www.linuxserver.io/armhf).
-
-### 2023-06-10
-- Bump unrar to 6.2.8.
-
-### 2023-02-23
-- Add qt6-qtbase-sqlite to support SQLite database for resume files.
-
-### 2022-11-29
-- Add openssl1.1-compat for qbittorrent-cli.
-
-### 2022-10-31
-- Add libtorrentv1 branch.
-
-### 2022-08-31
-- Rebase to Alpine Edge again to follow latest releases.
-
-### 2022-08-12
-- Bump unrar to 6.1.7.
-
-### 2022-06-16
-- Rebase to Alpine 3.16 from edge.
-
-### 2022-05-25
-- Fetch qbitorrent-cli from upstream repo.
-
-### 2022-03-02
-- Add unrar, 7zip, and qbitorrent-cli.
-
-### 2022-03-01
-- Add python for search plugin support.
-
-### 2022-02-23
-- Rebase to Alpine Edge, install from Alpine repos.
-
-### 2022-02-19
-- Add jq to build-stage
-
-### 2022-01-07
-- Rebase to Alpine, build from source.
-
-### 2022-01-06
-- Deprecate unstable branch.
-
-### 2021-02-10
-- Rebase to focal.
-
-### 2021-01-20
-- Deprecate `UMASK_SET` in favor of UMASK in baseimage, see above for more information.
-
-### 2020-11-12
-- Stop creating /config/data directory on startup
-
-### 2020-04-03
-- Fix adding search engine plugin
-
-### 2019-08-02
-- Add qbitorrent-cli for processing scripts.
-
-### 2019-03-23
-- Switching to new Base images, shift to arm32v7 tag.
-
-### 2019-01-14
-- Rebase to Ubuntu, add multi arch and pipeline logic.
-
-### 2018-09-25
-- Use buildstage type build, bump qbitorrent to 4.1.3.
-
-### 2018-08-14
-- Rebase to alpine 3.8, bump libtorrent to 1.1.9 and qbitorrent to 4.1.2.
-
-### 2018-06-08
-- Bump qbitorrent to 4.1.1.
-
-### 2018-04-26
-- Bump libtorrent to 1.1.7.
-
-### 2018-03-02
-- Bump qbitorrent to 4.0.4 and libtorrent to 1.1.6.
-
-### 2018-01-02
-- Deprecate cpu_core routine lack of scaling.
-
-### 2017-12-19
-- Update to v4.0.3.
-
-### 2017-02-09
-- Rebase to alpine 3.7
-
-### 2017-12-01
-- Update to v4.0.2.
-
-### 2017-11-27
-- Update to v4 and use cpu_core routine to speed up builds.
-
-### 2017-09-16
-- Bump to 3.3.16, Add WEBUI_PORT variable and notes to README to allow changing port of webui.
-
-### 2017-08-01
-- Initial Release.
-
-### 2018-02-12
-- Initial Release.
-
-    </Changes>
-    <Config Name="WebUI" Target="7780" Default="7780" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 6881" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="7780" Description="for changing the port of the webui, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Name>qbittorrent</Name>
+  <Repository>lscr.io/linuxserver/qbittorrent:4.4.5</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>qbittorrent:4.4.5</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7780]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qbittorrent_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699156839</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="7780" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">7780</Config>
+  <Config Name="Port: 6881" Target="28566" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
+  <Config Name="Port: 6881" Target="28566" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">7780</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="pt" Target="/pt" Default="/mnt/user/pt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="media" Target="/media" Default="/mnt/user/media" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media</Config>
+  <Config Name="adults" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
+  <Config Name="skyhawk4t" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
+  <Config Name="ironwolf4t" Target="/ironwolf4t" Default="/mnt/user/ironwolf4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>  
+  <Config Name="downloads" Target="/downloads" Default="/mnt/user/downloads/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/qbittorrent</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
