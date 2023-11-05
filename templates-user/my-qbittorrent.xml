@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699156839</DateInstalled>
+  <DateInstalled>1699157334</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -25,13 +25,13 @@
   <Config Name="Port: 6881" Target="28566" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
   <Config Name="Port: 6881" Target="28566" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
   <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">7780</Config>
-  <Config Name="config" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent</Config>
-  <Config Name="pt" Target="/pt" Default="/mnt/user/pt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
-  <Config Name="media" Target="/media" Default="/mnt/user/media" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/media</Config>
-  <Config Name="adults" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
-  <Config Name="skyhawk4t" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
-  <Config Name="ironwolf4t" Target="/ironwolf4t" Default="/mnt/user/ironwolf4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>  
-  <Config Name="downloads" Target="/downloads" Default="/mnt/user/downloads/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/qbittorrent</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="pt" Target="/pt" Default="/mnt/user/pt" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pt</Config>
+  <Config Name="media" Target="/media" Default="/mnt/user/media" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/media</Config>
+  <Config Name="adults" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/adults</Config>
+  <Config Name="skyhawk4t" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/skyhawk4t</Config>
+  <Config Name="ironwolf4t" Target="/ironwolf4t" Default="/mnt/user/ironwolf4t" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/ironwolf4t</Config>
+  <Config Name="downloads" Target="/downloads" Default="/mnt/user/downloads/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/qbittorrent</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
