@@ -38,7 +38,7 @@
   <Category>Cloud: Network:Web Tools:</Category>
   <WebUI>http://[IP]:[PORT:8082]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/FileBrowserEnhanced.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Filebrowser_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Filebrowser_A.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>

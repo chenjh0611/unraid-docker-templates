@@ -15,7 +15,7 @@ IYUU&#x81EA;&#x52A8;&#x8F85;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x76EE;&#x524D;&#x8
   <Category/>
   <WebUI>http://[IP]:[PORT:8787]</WebUI>
   <TemplateURL/>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Iyuu_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Iyuu_A.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

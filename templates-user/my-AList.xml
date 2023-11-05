@@ -15,7 +15,7 @@ Important: Initial password in the log.</Overview>
   <Category>Cloud: Network:Web</Category>
   <WebUI>http://[IP]:[PORT:5244]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/alist/alist.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Alist_B.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Alist_B.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

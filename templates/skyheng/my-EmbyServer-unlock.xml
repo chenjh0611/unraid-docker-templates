@@ -30,7 +30,7 @@
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8095]/</WebUI>
   <TemplateURL/>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Emby_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Emby_A.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

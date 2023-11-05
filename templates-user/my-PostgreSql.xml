@@ -29,7 +29,7 @@
   <Category>Network:Management Productivity: Tools:Utilities</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/juusujanar/unraid-templates/master/PostgreSQL11.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Postgresql_B.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Postgresql_B.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

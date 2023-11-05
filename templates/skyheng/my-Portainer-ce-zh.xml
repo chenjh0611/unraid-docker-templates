@@ -15,7 +15,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:9000]</WebUI>
   <TemplateURL/>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Portainer_B.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Portainer_B.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

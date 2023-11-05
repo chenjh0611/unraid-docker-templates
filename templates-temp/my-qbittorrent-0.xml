@@ -28,9 +28,9 @@
     <Overview>The Qbittorrent(https://www.qbittorrent.org/) project aims to provide an open-source software alternative to ÂµTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
-    <!-- Ìæ»»¹Ù·½µÄÍ¼±ê -->
+    <!-- æ›¿æ¢å®˜æ–¹çš„å›¾æ ‡ -->
     <!-- <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon> -->
-    <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qbittorrent_A.png</Icon>
+    <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Qbittorrent_A.png</Icon>
     <Date>2023-10-07</Date>
     <Changes>
 ### 2023-10-07

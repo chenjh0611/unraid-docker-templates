@@ -22,7 +22,7 @@ Github&#xFF1A;https://github.com/NAStool/nas-tools&#xD;
   <Category>Cloud: Network:Web Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/NasTools.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Nastools_B.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Nastools_B.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>

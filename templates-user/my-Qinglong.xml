@@ -24,7 +24,7 @@
   <Category>Cloud: Network:Web Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/Qinglong.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Qinglong_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Qinglong_A.png</Icon>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>

@@ -26,7 +26,7 @@ Do not do this if you do not understand what that means.</Overview>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/deasmi/unraid-ca/master/unraid-tailscale.xml</TemplateURL>
   <!-- <Icon>https://raw.githubusercontent.com/deasmi/unraid-tailscale/master/logo.png</Icon> -->
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Tailscale_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Tailscale_A.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --hostname=unraid</ExtraParams>
   <PostArgs/>
   <CPUset/>

@@ -19,7 +19,7 @@ Oray &#x5B98;&#x7F51;&#xFF1A;https://www.oray.com&#xD;
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Element_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Element_A.png</Icon>
   <ExtraParams>--device=/dev/net/tun --cap-add NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>

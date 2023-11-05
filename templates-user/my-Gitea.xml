@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:3001]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/fanningert/unraid-docker-templates/master/fanningert/Gitea.xml</TemplateURL>
   <!-- <Icon>https://raw.githubusercontent.com/fanningert/unraid-docker-templates/master/fanningert/icons/gitea.png</Icon> -->
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons@master/border-radius/Gitea_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Gitea_A.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
