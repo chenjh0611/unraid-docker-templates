@@ -3,7 +3,7 @@
   <Name>qbittorrent</Name>
   <Repository>lscr.io/linuxserver/qbittorrent:4.4.5</Repository>
   <Registry/>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699158941</DateInstalled>
+  <DateInstalled>1699199901</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
