@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>xunlei</Name>
+  <Name>Xunlei</Name>
   <Repository>cnk3x/xunlei</Repository>
   <Registry>https://hub.docker.com/r/cnk3x/xunlei/</Registry>
   <Network>bridge</Network>

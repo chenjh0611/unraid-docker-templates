@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>radarr</Name>
+  <Name>Radarr</Name>
   <Repository>lscr.io/linuxserver/radarr</Repository>
   <Registry>https://github.com/orgs/linuxserver/packages/container/package/radarr</Registry>
   <Network>bridge</Network>
