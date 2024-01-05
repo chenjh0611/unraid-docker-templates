@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>qbittorrent</Name>
+  <Repository>lscr.io/linuxserver/qbittorrent:4.4.5</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>qbittorrent:4.4.5</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:7780]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Qbittorrent_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699199901</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="7780" Default="8080" Mode="tcp" Description="WebUI" Type="Port" Display="always" Required="true" Mask="false">7780</Config>
+  <Config Name="Port: 6881" Target="28566" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
+  <Config Name="Port: 6881" Target="28566" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false">28566</Config>
+  <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">7780</Config>
+  <Config Name="config" Target="/config" Default="/mnt/user/appdata/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/qbittorrent</Config>
+  <Config Name="downloads" Target="/downloads" Default="/mnt/user/downloads/qbittorrent" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads/qbittorrent</Config>
+  <Config Name="Path 1" Target="/pt" Default="/mnt/user/pt" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pt</Config>
+  <Config Name="Path 2" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/adults</Config>
+  <Config Name="Path 3" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/skyhawk4t</Config>
+  <Config Name="Path 4" Target="/ironwolf4t" Default="/mnt/user/ironwolf4t" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/ironwolf4t</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
