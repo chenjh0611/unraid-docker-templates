@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pichome</Name>
+  <Repository>oaooa/pichome</Repository>
+  <Registry>https://hub.docker.com/r/oaooa/pichome/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/oaooa/pichome/</Support>
+  <Project/>
+  <Overview>&#x6B27;&#x5965;PicHome&#x662F;&#x7528;&#x4E8E;&#x6B27;&#x5965;&#x56FE;&#x6587;&#x6863;&#x7CFB;&#x7EDF;&#x7684;&#x56FE;&#x7247;&#x5C55;&#x793A;&#x95E8;&#x6237;&#xFF0C;&#x56FE;&#x7247;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x3002;&#x4E5F;&#x80FD;&#x591F;&#x7528;&#x4E8E;Eagle&#x7B49;&#x5176;&#x4ED6;&#x56FE;&#x5E93;&#x8F6F;&#x4EF6;&#x7684;&#x56FE;&#x7247;&#x5C55;&#x793A;&#x95E8;&#x6237;&#x3002;&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/oaooa/pichome/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:6780]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://oaooa.com/img/pichomelogo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704696043</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="80" Default="6780" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6780</Config>
+  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
+  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
+  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
+  <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
+  <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>
