@@ -15,7 +15,7 @@ Converted By Community Applications   Always verify this template (and values)  
 &#xD;
 https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <Category/>
-  <WebUI>http://[IP]:[PORT:3002]</WebUI>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
   <TemplateURL/>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Moviepilot_A.png</Icon>
   <ExtraParams/>
@@ -25,26 +25,16 @@ https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Container Path 1" Target="/config" Default="/mnt/user/appdata/moviepilot" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot</Config>
-  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3002</Config>
-  <Config Name="Container Variable 1" Target="LANG" Default="C.UTF-8" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">C.UTF-8</Config>
-  <Config Name="Container Variable 2" Target="GPG_KEY" Default="A035C8C19219BA821ECEA86B64E628F8D684696D" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">A035C8C19219BA821ECEA86B64E628F8D684696D</Config>
-  <Config Name="Container Variable 3" Target="PYTHON_VERSION" Default="3.11.4" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3.11.4</Config>
-  <Config Name="Container Variable 4" Target="PYTHON_PIP_VERSION" Default="23.1.2" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">23.1.2</Config>
-  <Config Name="Container Variable 5" Target="PYTHON_SETUPTOOLS_VERSION" Default="65.5.1" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">65.5.1</Config>
-  <Config Name="Container Variable 6" Target="PYTHON_GET_PIP_URL" Default="https://github.com/pypa/get-pip/raw/9af82b715db434abb94a0a6f3569f43e72157346/public/get-pip.py" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/pypa/get-pip/raw/9af82b715db434abb94a0a6f3569f43e72157346/public/get-pip.py</Config>
-  <Config Name="Container Variable 7" Target="PYTHON_GET_PIP_SHA256" Default="45a2bb8bf2bb5eff16fdd00faef6f29731831c7c59bd9fc2bf1f3bed511ff1fe" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">45a2bb8bf2bb5eff16fdd00faef6f29731831c7c59bd9fc2bf1f3bed511ff1fe</Config>
-  <Config Name="Container Variable 8" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
-  <Config Name="Container Variable 9" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
-  <Config Name="Container Variable 10" Target="TERM" Default="xterm" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">xterm</Config>
-  <Config Name="Container Variable 11" Target="PUID" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="Container Variable 12" Target="PGID" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
-  <Config Name="Container Variable 13" Target="UMASK" Default="000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
-  <Config Name="Container Variable 14" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
-  <Config Name="Container Variable 15" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3002</Config>
-  <Config Name="Container Variable 16" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Container Variable 17" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
-  <Config Name="Container Variable 18" Target="AUTH_SITE" Default="iyuu" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">iyuu</Config>
-  <Config Name="Container Variable 19" Target="IYUU_SIGN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">iyuu</Config>
+  <Config Name="IYUU_SIGN" Target="IYUU_SIGN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
+  <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
+  <Config Name="CONFIG_PATH" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
