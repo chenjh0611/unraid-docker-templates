@@ -21,14 +21,14 @@ https://hub.docker.com/r/oaooa/pichome/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704696043</DateInstalled>
+  <DateInstalled>1704697580</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Container Port 1" Target="80" Default="6780" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6780</Config>
-  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
-  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
-  <Config Name="Container Path 1" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
+  <Config Name="Container Path 1" Target="/mnt/photos" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/photos/</Config>
+  <Config Name="Container Path 2" Target="/mnt/adults" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/adults/</Config>
+  <Config Name="Container App Path" Target="/var/www/html" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pichome</Config>
   <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
