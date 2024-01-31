@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MusicTag</Name>
+  <Repository>xhongc/music_tag_web:latest</Repository>
+  <Registry>https://hub.docker.com/r/xhongc/music_tag_web</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/easychen/CookieCloud/issues</Support>
+  <Project>https://github.com/easychen/CookieCloud</Project>
+  <Overview>&#x300E;&#x97F3;&#x4E50;&#x6807;&#x7B7E;&#x300F;Web&#x7248;&#x662F;&#x4E00;&#x6B3E;&#x53EF;&#x4EE5;&#x7F16;&#x8F91;&#x6B4C;&#x66F2;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x4E13;&#x8F91;&#xFF0C;&#x827A;&#x672F;&#x5BB6;&#xFF0C;&#x6B4C;&#x8BCD;&#xFF0C;&#x5C01;&#x9762;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C; &#x652F;&#x6301;FLAC, APE, WAV, AIFF, WV, TTA, MP3, MP4, M4A, OGG, MPC, OPUS, WMA, DSF, DFF&#x7B49;&#x97F3;&#x9891;&#x683C;&#x5F0F;&#x3002;</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/cookiecloud/cookiecloud.xml</TemplateURL>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Musictag_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1706680209</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="8001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <Config Name="Config Path" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/music-tag</Config>
+  <Config Name="Music Path" Target="/app/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/music</Config>
+</Container>
