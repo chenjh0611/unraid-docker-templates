@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Clash</Name>
+  <Repository>dreamacro/clash:latest</Repository>
+  <Registry>https://hub.docker.com/r/dreamacro/clash</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:9090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Clash_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704424733</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port: Http" Target="7890" Default="7890" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7890</Config>
+  <Config Name="Port: Http" Target="7890" Default="7890" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">7890</Config>
+  <Config Name="Port: Socks" Target="7891" Default="7891" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7891</Config>
+  <Config Name="Port: API" Target="9090" Default="9090" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9090</Config>
+  <Config Name="Config" Target="/root/.config/clash/config.yaml" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/clash/config.yaml</Config>
+</Container>

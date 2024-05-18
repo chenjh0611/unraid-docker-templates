@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TinyMM</Name>
+  <Repository>dzhuang/tinymediamanager:latest</Repository>
+  <Registry>https://hub.docker.com/r/dzhuang/tinymediamanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>http://lime-technology.com/forum/index.php?topic=45838.0</Support>
+  <Project>https://www.tinymediamanager.org/</Project>
+  <Overview>&#x5E94;&#x7528;&#x4ECB;&#x7ECD;&#xD;
+&#xD;
+tinyMediaManager&#xFF0C;&#x7B80;&#x79F0; tmm&#xFF0C;&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x4E8E; Java &#x5F00;&#x53D1;&#x7684;&#x5F71;&#x89C6;&#x8D44;&#x6E90;&#x4FE1;&#x606F;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6279;&#x91CF;&#x5904;&#x7406;&#x672C;&#x5730;&#x7684;&#x5F71;&#x89C6;&#x8D44;&#x6E90;&#xFF0C;&#x5904;&#x7406;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x6F02;&#x4EAE;&#x7528;&#x6D77;&#x62A5;&#x5899;&#x7684;&#x65B9;&#x5F0F;&#x5C55;&#x793A;&#x51FA;&#x6765;&#x3002;&#xD;
+&#xD;
+&#x56E0;&#x4E3A;&#x662F;&#x57FA;&#x4E8E; Java &#x5F00;&#x53D1;&#xFF0C;&#x672C;&#x8EAB;&#x5C31;&#x5177;&#x6709;&#x8DE8;&#x5E73;&#x53F0;&#x7279;&#x6027;&#xFF0C;&#x652F;&#x6301; Windows&#x3001;MacOS&#x3001;Linux &#x7B49;&#x7CFB;&#x7EDF;&#xD;
+&#xD;
+&#x6587;&#x6863;&#x4ECB;&#x7ECD;&#xD;
+https://www.tinymediamanager.org/&#xD;
+&#xD;
+&#x82F1;&#x6587;&#x754C;&#x9762;&#xD;
+romancin/tinymediamanager&#xD;
+&#xD;
+&#x4E2D;&#x6587;&#x754C;&#x9762;&#xD;
+dzhuang/tinymediamanager</Overview>
+  <Category>Cloud: Network:Web Tools:</Category>
+  <WebUI>http://[IP]:[PORT:6800]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/shuosiw/unraid/master/TinyMediaManager.xml</TemplateURL>
+  <Icon>https://github.com/shuosiw/unraid/raw/master/images/tmm-icon.png</Icon>
+  <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1699241016</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI &#x7AEF;&#x53E3;" Target="5800" Default="" Mode="tcp" Description="&#x8BBE;&#x7F6E;&#x7AEF;&#x53E3;&#x652F;&#x6301;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x8FDB;&#x884C;&#x7BA1;&#x7406;" Type="Port" Display="always" Required="true" Mask="false">6800</Config>
+  <Config Name="VNC &#x7AEF;&#x53E3;" Target="5900" Default="" Mode="tcp" Description="&#x8BBE;&#x7F6E;&#x7AEF;&#x53E3;&#x652F;&#x6301;&#x901A;&#x8FC7; VNC &#x8BBF;&#x95EE;&#x8FDB;&#x884C;&#x7BA1;&#x7406;" Type="Port" Display="always" Required="true" Mask="false">6900</Config>
+  <Config Name="&#x542F;&#x7528;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x652F;&#x6301;" Target="ENABLE_CJK_FONT" Default="0|1" Mode="" Description="1 &#x8868;&#x793A;&#x542F;&#x7528;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x652F;&#x6301;&#xFF0C;0 &#x8868;&#x793A;&#x4E0D;&#x542F;&#x7528;" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/tinymm" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; tmm &#x914D;&#x7F6E;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tinymm</Config>
+  <Config Name="Source Path 1" Target="/media/pt" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="Source Path 2" Target="/media/ironwolf4t" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>
+  <Config Name="Source Path 3" Target="/media/skyhawk4t" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
+  <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; tmm &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C; tmm &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;&#x7EC4;" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+</Container>

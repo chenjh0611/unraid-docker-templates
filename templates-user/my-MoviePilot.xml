@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MoviePilot</Name>
+  <Repository>jxxghp/moviepilot</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/moviepilot/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jxxghp/moviepilot/</Support>
+  <Project/>
+  <Overview>https://github.com/jxxghp/MoviePilot&#xD;
+&#xD;
+https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Moviepilot_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704704742</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB_PORT" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">hddolby</Config>
+  <Config Name="HDDOLBY_ID" Target="HDDOLBY_ID" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="HDDOLBY_PASSKEY" Target="HDDOLBY_PASSKEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
+  <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
+  <Config Name="CONFIG_PATH" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>
