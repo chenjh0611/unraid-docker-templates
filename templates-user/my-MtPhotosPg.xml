@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MtPhotosPg</Name>
+  <Repository>mtphotos/mt-photos-pg:latest</Repository>
+  <Registry>https://hub.docker.com/r/mtphotos/mt-photos-pg</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://mtmt.tech/contact</Support>
+  <Project>https://mtmt.tech</Project>
+  <Overview>MT Photos  &#x4E00;&#x6B3E;&#x4E3A;Nas&#x7528;&#x6237;&#x51C6;&#x5907;&#x7684;&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Overview>
+  <Category>Productivity: MediaApp:Photos</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Mtphotos_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725192348</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="&#x7AEF;&#x53E3;&#x6620;&#x5C04;1" Target="5432" Default="5432" Mode="tcp" Description="MT Photos PG&#x670D;&#x52A1;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="null">6432</Config>
+    <Config Name="&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/user/appdata/MtPhotos</Config>
+  <Config Name="PGDATA" Target="PGDATA" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/var/lib/postgresql/data/pgdata</Config>
+  <Config Name="POSTGRES_PORT" Target="POSTGRES_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
+  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+</Container>
