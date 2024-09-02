@@ -9,23 +9,19 @@
   <Privileged>false</Privileged>
   <Support>https://mtmt.tech/contact</Support>
   <Project>https://mtmt.tech</Project>
-  <Overview>MT Photos &#x4E00;&#x6B3E;&#x4E3A;Nas&#x7528;&#x6237;&#x51C6;&#x5907;&#x7684;&#x7167;&#x7247;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;</Overview>
+  <Overview>MT Photos &#x66F4;&#x9AD8;&#x6548;&#x3001;&#x66F4;&#x51C6;&#x786E;&#x7684;insightface&#x6A21;&#x578B;</Overview>
   <Category>Productivity: MediaApp:Photos</Category>
-  <WebUI></WebUI>
+  <WebUI/>
   <TemplateURL/>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Mtphotos_A.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1725192426</DateInstalled>
+  <DateInstalled>1725195784</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="&#x7AEF;&#x53E3;&#x6620;&#x5C04;1" Target="8066" Default="8066" Mode="tcp" Description="MT Photos Web&#x670D;&#x52A1;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="true" Mask="{8}">8066</Config>
-  <Config Name="&#x6570;&#x636E;&#x5B58;&#x50A8;&#x76EE;&#x5F55;" Target="/root/.insightface/models" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/user/appdata/MtPhotos/models</Config>
+  <Config Name="App Port" Target="8066" Default="8066" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="null">8066</Config>
+  <Config Name="Models Path" Target="/root/.insightface/models" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="null">/mnt/user/appdata/MtPhotos/models</Config>
   <Config Name="API_AUTH_KEY" Target="API_AUTH_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mt_photos_ai_extra</Config>
-  <Config Name="POSTGRES_PORT" Target="POSTGRES_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5432</Config>
-  <Config Name="POSTGRES_DATABASE" Target="POSTGRES_DATABASE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
-  <Config Name="POSTGRES_USER" Target="POSTGRES_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
-  <Config Name="POSTGRES_PASSWORD" Target="POSTGRES_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
 </Container>

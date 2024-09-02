@@ -28,19 +28,18 @@
 &#xD;
 </Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <WebUI>http://[IP]:[PORT:2345]/</WebUI>
+  <WebUI>http://[IP]:[PORT:6908]/</WebUI>
   <TemplateURL/>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Emby_A.png</Icon>
   <ExtraParams>--add-host xiaoya.host:192.168.2.10</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1716036234</DateInstalled>
+  <DateInstalled>1723738173</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Host Port 1" Target="2345" Default="" Mode="tcp" Description="http port" Type="Port" Display="always" Required="true" Mask="false">2345</Config>
-  <Config Name="Host Port 2" Target="6908" Default="" Mode="tcp" Description="http port" Type="Port" Display="always" Required="true" Mask="false">6908</Config>
-  <Config Name="Host Port 3" Target="8920" Default="" Mode="tcp" Description="https port" Type="Port" Display="always" Required="true" Mask="false">8923</Config>
+  <Config Name="Host Port 1" Target="6908" Default="" Mode="tcp" Description="http port" Type="Port" Display="always" Required="true" Mask="false">6908</Config>
+  <Config Name="Host Port 2" Target="8920" Default="" Mode="tcp" Description="https port" Type="Port" Display="always" Required="true" Mask="false">8923</Config>
   <Config Name="dlna1" Target="7359" Default="" Mode="udp" Description="local network discovery" Type="Port" Display="always" Required="false" Mask="false">7362</Config>
   <Config Name="dlna2" Target="1900" Default="" Mode="udp" Description="dlna" Type="Port" Display="always" Required="false" Mask="false">1903</Config>
   <Config Name="Config Path" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/xiaoya/config/</Config>
@@ -54,6 +53,4 @@
   <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
-
-  
 </Container>

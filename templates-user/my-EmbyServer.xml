@@ -34,7 +34,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699104324</DateInstalled>
+  <DateInstalled>1723819263</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -47,7 +47,6 @@
   <Config Name="media path" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
   <Config Name="media path" Target="/downloads" Default="/mnt/user/downloads" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/downloads</Config>
   <Config Name="media path" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
-  <Config Name="media path" Target="/ironwolf4t" Default="/mnt/user/ironwolf4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>
   <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>

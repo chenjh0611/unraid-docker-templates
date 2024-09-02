@@ -3,7 +3,7 @@
   <Name>Xunlei</Name>
   <Repository>cnk3x/xunlei</Repository>
   <Registry>https://hub.docker.com/r/cnk3x/xunlei/</Registry>
-  <Network>bridge</Network>
+  <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
@@ -16,17 +16,17 @@ Converted By Community Applications   Always verify this template (and values)  
 &#xD;
 https://hub.docker.com/r/cnk3x/xunlei/</Overview>
   <Category>Downloaders:</Category>
-  <WebUI>http://[IP]:[PORT:2345]</WebUI>
+  <WebUI>http://[IP]:[PORT:7654]</WebUI>
   <TemplateURL/>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Xunlei_A.png</Icon>
-  <ExtraParams>--restart=always</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704426233</DateInstalled>
+  <DateInstalled>1722233084</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Container Variable 1" Target="XL_WEB_PORT" Default="2345" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">2345</Config>
+  <Config Name="Container Variable 1" Target="XL_DASHBOARD_PORT" Default="7654" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">7654</Config>
   <Config Name="Container Variable 2" Target="XL_DEBUG" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="Container Path 1" Target="/xunlei/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xunlei</Config>
   <Config Name="Container Path 2" Target="/xunlei/downloads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/downloads/xunlei</Config>

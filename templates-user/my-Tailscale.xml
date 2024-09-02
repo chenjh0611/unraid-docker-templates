@@ -1,41 +1,50 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Tailscale</Name>
-  <Repository>deasmi/unraid-tailscale:latest</Repository>
-  <Registry>https://hub.docker.com/repository/docker/deasmi/unraid-tailscale</Registry>
+  <Repository>tailscale/tailscale:stable</Repository>
+  <Registry>https://hub.docker.com/r/tailscale/tailscale</Registry>
   <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
-  <Support>https://forums.unraid.net/topic/90719-will-move-to-ca-tailscale-support-thread/</Support>
-  <Project>https://github.com/deasmi/unraid-tailscale</Project>
-  <Overview>Private networks made easy&#xD;
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/167947-docker-tailscale/</Support>
+  <Project>https://github.com/tailscale/tailscale</Project>
+  <Overview>**To access Unraid resources, install the Tailscale plugin instead.**&#xD;
+  &#xD;
+This container provides Tailscale for use as a sidecar for Docker containers connected to ipvlan (e.g., br0) networks, or for use with node sharing.    &#xD;
 &#xD;
-Connect all your devices using WireGuard,&#xAE; without the hassle.&#xD;
-Tailscale makes it as easy as installing an app and signing in.&#xD;
+## Important Information&#xD;
 &#xD;
-This container sets up tailscale for unraid.&#xD;
+This container is only intended for advanced networking configurations, so it is expected that you know what you are doing.&#xD;
 &#xD;
-It will register as hostname unraid, if you want to change that see 'Extra Parameters' below and change to the hostname you would like.&#xD;
+Support will not be provided for using this container to access Unraid resources (WebGUI, shares, etc.). &#xD;
 &#xD;
-** IMPORTANT When you first start this container you must check the log file for the logon URL and then enter it into a browser and logon to tail scale. I would then also advise setting the keys to not expire for your unraid host **&#xD;
+## State Configuration&#xD;
 &#xD;
-** Note that this will expose your whole server into your tailscale VPN network ** &#xD;
-Do not do this if you do not understand what that means.</Overview>
-  <Category>Network:VPN spotlight:</Category>
+This container can be configured as either an ephemeral or persistent node.    &#xD;
+&#xD;
+To create a persistent node:    &#xD;
+1. (Optional) Generate an authentication key in the Tailscale admin console.    &#xD;
+2. Set Hostname, State Storage, and (if applicable) Authentication Key in the container configuration.    &#xD;
+3. If you did not set an authentication key, open the container logs to obtain the login URL to join the node to your tailnet. **Caution: If you use this method, you must complete the login within 60 seconds of the container starting.**&#xD;
+&#xD;
+To create an ephemeral node:    &#xD;
+1. Generate an ephemeral authentication key in the Tailscale admin console.    &#xD;
+2. Set Hostname and Authentication Key in the container configuration. Leave State Storage blank.</Overview>
+  <Category>Network:VPN</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/deasmi/unraid-ca/master/unraid-tailscale.xml</TemplateURL>
-  <!-- <Icon>https://raw.githubusercontent.com/deasmi/unraid-tailscale/master/logo.png</Icon> -->
+  <TemplateURL>https://raw.githubusercontent.com/dkaser/unraid-plugins/master/tailscale-docker.xml</TemplateURL>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Tailscale_A.png</Icon>
-  <ExtraParams>--cap-add=NET_ADMIN --hostname=unraid</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699026861</DateInstalled>
-  <DonateText>If you like my work please consider donating to cancer research at https://www.justgiving.com/fundraising/unraid-tailscale.</DonateText>
-  <DonateLink>https://www.justgiving.com/fundraising/unraid-tailscale</DonateLink>
+  <DateInstalled>1722393383</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires/>
-  <Config Name="Appdata path" Target="/state" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale</Config>
-  <Config Name="Download path" Target="/downloads" Default="" Mode="rw" Description="Where should files download to." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale/downloads</Config>
-  <Config Name="UP_FLAGS" Target="UP_FLAGS" Default="" Mode="" Description="Additional flags to pass to tailscale on startup" Type="Variable" Display="always" Required="false" Mask="false">--advertise-exit-node --accept-dns=false --advertise-routes=192.168.2.0/24</Config>
-  <Config Name="Enable downloads" Target="ENABLE_DOWNLOADS" Default="FALSE" Mode="" Description="Set to TRUE, and set the download path, if you want to support downloads.&#13;&#10;&#13;&#10;Note: You must manually set tag to above to deasmi/unraid-tailscale:download to support downloads until beta test is finished" Type="Variable" Display="always" Required="false" Mask="false">TRUE</Config>
+  <Config Name="State Storage" Target="/state" Default="/mnt/user/appdata/tailscale" Mode="rw" Description="Path to store Tailscale state. Leave blank for ephemeral nodes." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale</Config>
+  <Config Name="Hostname" Target="TS_HOSTNAME" Default="unraid-docker" Mode="" Description="Name to be assigned to node on the tailnet." Type="Variable" Display="always-hide" Required="true" Mask="false">unraid-docker</Config>
+  <Config Name="Authentication Key" Target="TS_AUTHKEY" Default="" Mode="" Description="Authentication key to use to join the tailnet. Required for ephemeral nodes. Only used on first start if state is persistent." Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="Extra Arguments" Target="TS_EXTRA_ARGS" Default="" Mode="" Description="Extra arguments to pass via tailscale set." Type="Variable" Display="advanced-hide" Required="false" Mask="false">--accept-dns=false --accept-routes --advertise-routes=192.168.2.0/24 --advertise-exit-node=false</Config>
+  <Config Name="TS_STATE_DIR" Target="TS_STATE_DIR" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/state</Config>
 </Container>

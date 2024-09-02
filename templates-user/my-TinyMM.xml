@@ -30,7 +30,7 @@ dzhuang/tinymediamanager</Overview>
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699241016</DateInstalled>
+  <DateInstalled>1723819171</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -39,7 +39,6 @@ dzhuang/tinymediamanager</Overview>
   <Config Name="&#x542F;&#x7528;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x652F;&#x6301;" Target="ENABLE_CJK_FONT" Default="0|1" Mode="" Description="1 &#x8868;&#x793A;&#x542F;&#x7528;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#x652F;&#x6301;&#xFF0C;0 &#x8868;&#x793A;&#x4E0D;&#x542F;&#x7528;" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
   <Config Name="AppData &#x914D;&#x7F6E;&#x8DEF;&#x5F84;" Target="/config" Default="/mnt/user/appdata/tinymm" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /config&#xFF0C;&#x7528;&#x4E8E;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8; tmm &#x914D;&#x7F6E;" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tinymm</Config>
   <Config Name="Source Path 1" Target="/media/pt" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
-  <Config Name="Source Path 2" Target="/media/ironwolf4t" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/ironwolf4t</Config>
   <Config Name="Source Path 3" Target="/media/skyhawk4t" Default="" Mode="rw" Description="&#x8BE5;&#x76EE;&#x5F55;&#x5C06;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#xFF0C;&#x7528;&#x4E8E;&#x8FDB;&#x884C;&#x8D44;&#x6E90;&#x522E;&#x524A;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
   <Config Name="&#x7528;&#x6237; ID" Target="PUID" Default="" Mode="" Description="&#x8FD0;&#x884C; tmm &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
   <Config Name="&#x7528;&#x6237;&#x7EC4; ID" Target="GUID" Default="" Mode="" Description="&#x8FD0;&#x884C; tmm &#x5BB9;&#x5668;&#x7684;&#x7528;&#x6237;&#x7EC4;" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>

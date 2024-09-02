@@ -14,10 +14,10 @@
   <WebUI>http://[IP]:[PORT:1234]</WebUI>
   <TemplateURL/>
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Shadowsocks_A.png</Icon>
-  <ExtraParams>--restart=always</ExtraParams>
+  <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704426510</DateInstalled>
+  <DateInstalled>1706715068</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

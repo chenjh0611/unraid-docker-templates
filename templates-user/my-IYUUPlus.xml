@@ -24,9 +24,9 @@ IYUU&#x81EA;&#x52A8;&#x8F85;&#x79CD;&#x5DE5;&#x5177;&#xFF0C;&#x76EE;&#x524D;&#x8
   <DonateLink/>
   <Requires/>
   <Config Name="WebUI" Target="8787" Default="" Mode="tcp" Description="http" Type="Port" Display="always" Required="true" Mask="false">8787</Config>
-  <Config Name="Appdata" Target="/IYUU/db" Default="/mnt/user/appdata/iyuu/db" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/iyuu/db</Config>
-  <Config Name="Transmission" Target="/torrents/tr" Default="/mnt/user/appdata/transmission/torrents" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/transmission/torrents</Config>
-  <Config Name="Qbittorrent" Target="/torrents/qb" Default="/mnt/user/appdata/qbittorrent/qBittorrent/BT_backup" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/qbittorrent/qBittorrent/BT_backup</Config>
+  <Config Name="Appdata" Target="/IYUU/db" Default="/mnt/user/appdata/iyuu/db" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/iyuu/db</Config>
+  <Config Name="Transmission" Target="/torrents/tr" Default="/mnt/user/appdata/transmission/torrents" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/transmission/torrents</Config>
+  <Config Name="Qbittorrent" Target="/torrents/qb" Default="/mnt/user/appdata/qbittorrent/qBittorrent/BT_backup" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/qbittorrent/qBittorrent/BT_backup</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>

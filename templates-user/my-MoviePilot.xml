@@ -19,7 +19,7 @@ https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704704742</DateInstalled>
+  <DateInstalled>1704705368</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,8 +28,8 @@ https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">hddolby</Config>
-  <Config Name="HDDOLBY_ID" Target="HDDOLBY_ID" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="HDDOLBY_PASSKEY" Target="HDDOLBY_PASSKEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="HDDOLBY_ID" Target="HDDOLBY_ID" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">29176</Config>
+  <Config Name="HDDOLBY_PASSKEY" Target="HDDOLBY_PASSKEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">7608a36c2efd15b14f0869953f757e07</Config>
   <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
   <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>

@@ -34,7 +34,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704276192</DateInstalled>
+  <DateInstalled>1704436054</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -51,8 +51,8 @@
   <Config Name="GIDLIST" Target="GIDLIST" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
   <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="Container Device: /dev/dri " Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emby9kg</Config>
-  <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
-  <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
+  <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">192.168.2.124:7890</Config>
+  <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false">192.168.2.124:7890</Config>
   <Config Name="NVIDIA_VISIBLE_DEVICES" Target="NVIDIA_VISIBLE_DEVICES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="NVIDIA_DRIVER_CAPABILITIES" Target="NVIDIA_DRIVER_CAPABILITIES" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
 </Container>
