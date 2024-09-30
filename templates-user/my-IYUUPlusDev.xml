@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>IYUUPlusDev</Name>
+  <Repository>iyuucn/iyuuplus-dev:latest</Repository>
+  <Registry>https://registry.hub.docker.com/r/iyuucn/iyuuplus-dev</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>IYUUPlus&#x5F00;&#x53D1;&#x7248; &#x57FA;&#x4E8E;Mysql&#x91CD;&#x6784;&#x7248;&#x672C;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8780]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Iyuu_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1725248707</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8780" Default="8780" Mode="tcp" Description="8780&#x662F;&#x5BB9;&#x5668;&#x5185;nginx&#x7684;&#x76D1;&#x542C;&#x7AEF;&#x53E3;&#xFF0C;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#x4E86; 8787&#x3001;3131" Type="Port" Display="always" Required="true" Mask="false">8780</Config>
+  <Config Name="Config" Target="/iyuu" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/IYUUPlusDev/iyuu</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/IYUUPlusDev/data</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>StarVPN</Name>
+  <Repository>registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:5.0.3</Repository>
+  <Registry>https://hub.docker.com/r/xianwei2022/stars.client</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/forum/94-support/</Support>
+  <Project/>
+  <Overview>&#x661F;&#x7A7A;&#x7EC4;&#x7F51;&#xFF0C;&#x4E00;&#x6B3E;&#x521B;&#x65B0;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x5E94;&#x7528;&#xFF0C;&#x91C7;&#x7528;&#x4E86;&#x524D;&#x6CBF;&#x7684;&#x4E91;&#x865A;&#x62DF;&#x5C40;&#x57DF;&#x7F51;&#x4E0E;SD-WAN&#x667A;&#x80FD;&#x7EC4;&#x7F51;&#x6280;&#x672F;&#x3002;&#x5176;&#x8BBE;&#x8BA1;&#x521D;&#x8877;&#x662F;&#x5F7B;&#x5E95;&#x8F6C;&#x53D8;&#x8BBE;&#x5907;&#x95F4;&#x7684;&#x4E92;&#x8054;&#x6A21;&#x5F0F;&#x3002;&#x661F;&#x7A7A;&#x7EC4;&#x7F51;&#x4EE5;&#x5176;&#x5353;&#x8D8A;&#x7684;&#x6548;&#x7387;&#x3001;&#x7075;&#x6D3B;&#x6027;&#x53CA;&#x6210;&#x672C;&#x6548;&#x76CA;&#xFF0C;&#x4E3A;&#x4F01;&#x4E1A;&#x548C;&#x4E2A;&#x4EBA;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x4E86;&#x524D;&#x6240;&#x672A;&#x6709;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x4F53;&#x9A8C;&#xFF0C;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x4E86;&#x884C;&#x4E1A;&#x6807;&#x51C6;&#xFF0C;&#x4E0E;&#x4F20;&#x7EDF;VPN&#x65B9;&#x6848;&#x76F8;&#x6BD4;&#x5C55;&#x73B0;&#x51FA;&#x663E;&#x8457;&#x4F18;&#x52BF;&#x3002;</Overview>
+  <Category>Tools:System</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://nav.skyheng.com/img/icons/StarVPN.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1723737227</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="STARS_USER" Target="STARS_USER" Default="" Mode="" Description="&#x6307;&#x5B9A;&#x60A8;&#x7684;&#x661F;&#x7A7A;&#x7EC4;&#x7F51;&#x6210;&#x5458;&#x8D26;&#x53F7;" Type="Variable" Display="always" Required="false" Mask="false">301261:0001</Config>
+  <Config Name="STARS_PASS" Target="STARS_PASS" Default="" Mode="" Description="&#x6307;&#x5B9A;&#x60A8;&#x7684;&#x661F;&#x7A7A;&#x7EC4;&#x7F51;&#x6210;&#x5458;&#x5BC6;&#x7801;" Type="Variable" Display="always" Required="false" Mask="true">66668888</Config>
+</Container>

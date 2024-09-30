@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MDCx</Name>
+  <Repository>stainless403/mdcx-src-webtop-base</Repository>
+  <Registry>https://hub.docker.com/r/stainless403/mdcx-src-webtop-base/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/stainless403/mdcx-src-webtop-base/</Support>
+  <Project/>
+  <Overview>MDCx Docker&#x955C;&#x50CF;&#xFF0C;&#x652F;&#x6301;&#x901A;&#x8FC7;&#x7F51;&#x9875;&#x6216;&#x8FDC;&#x7A0B;&#x684C;&#x9762;&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x81EA;&#x5DF1;&#x90E8;&#x7F72;&#x6E90;&#x7801;&#x3002;</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705029997</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Path 1" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/mdcx/data</Config>
+  <Config Name="Container Port 1" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4000</Config>
+  <Config Name="Container Port 2" Target="3389" Default="3389" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="app" Target="/app" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/mdcx/app</Config>
+  <Config Name="mdcx-config" Target="/mdcx-config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/mdcx/mdcx-config</Config>
+  <Config Name="MDCx.config" Target="/app/MDCx.config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/mdcx/mdcx-config/MDCx.config</Config>
+  <Config Name="logs" Target="/app/Log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/mdcx/logs</Config>
+</Container>

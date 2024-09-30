@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>XiaoyaEmd</Name>
+  <Repository>ddsderek/xiaoya-emd:latest</Repository>
+  <Registry>https://hub.docker.com/r/ddsderek/xiaoya-emd</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://img.ddsrem.com/i/2023/08/01/7hw5aq.webp</Icon>
+  <ExtraParams/>
+  <PostArgs>--media /media</PostArgs>
+  <CPUset/>
+  <DateInstalled>1718777703</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Path 1" Target="/media" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/xiaoya/media</Config>
+  <Config Name="Host Key 1" Target="CYCLE" Default="43200" Mode="" Description="&#x6700;&#x5C0F;&#x662F;43200&#x79D2;&#xFF0C;&#x5C31;&#x662F;12&#x5C0F;&#x65F6;&#xFF0C;&#x624B;&#x52A8;&#x91CD;&#x542F;&#x5BB9;&#x5668;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x5143;&#x6570;&#x636E;" Type="Variable" Display="always" Required="false" Mask="false">86400</Config>
+  <Config Name="Host Key 2" Target="RESTART_AUTO_UPDATE" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Metatube</Name>
+  <Repository>metatube/metatube-server</Repository>
+  <Registry>https://hub.docker.com/r/metatube/metatube-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/metatube/metatube-server/</Support>
+  <Project/>
+  <Overview>&#xD;
+&#xD;
+Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
+&#xD;
+https://hub.docker.com/r/metatube/metatube-server/</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Metatube_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1704599800</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Variable 1" Target="GIN_MODE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="Container Variable 2" Target="PORT" Default="8080" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">9876</Config>
+  <Config Name="Container Variable 3" Target="TOKEN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 4" Target="DSN" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">library.db</Config>
+  <Config Name="Container Variable 5" Target="REQUEST_TIMEOUT" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Container Variable 6" Target="DB_MAX_IDLE_CONNS" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Container Variable 7" Target="DB_MAX_OPEN_CONNS" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Container Variable 8" Target="DB_PREPARED_STMT" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Container Variable 9" Target="DB_AUTO_MIGRATE" Default="0" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
