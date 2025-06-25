@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1723819298</DateInstalled>
+  <DateInstalled>1728353014</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -32,7 +32,7 @@
   <Config Name="media path" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
   <Config Name="UID" Target="UID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="GID" Target="GID" Default="0" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="Container Device: /dev/dri" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
+  <Config Name="intel_graphcard" Target="" Default="" Mode="" Description="" Type="Device" Display="always" Required="false" Mask="false">/dev/dri</Config>
   <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/emby" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/jellyfin</Config>
   <Config Name="http_proxy" Target="http_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>
   <Config Name="https_proxy" Target="https_proxy" Default="" Mode="" Description="" Type="Variable" Display="always-hide" Required="false" Mask="false"/>

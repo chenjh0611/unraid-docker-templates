@@ -42,7 +42,7 @@
   <ExtraParams>--mount type=tmpfs,destination=/tmp</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699165853</DateInstalled>
+  <DateInstalled>1728061712</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AlistStrm</Name>
+  <Repository>itefuir/alist-strm</Repository>
+  <Registry>https://hub.docker.com/r/itefuir/alist-strm/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/itefuir/alist-strm/</Support>
+  <Project/>
+  <Overview>&#x514D;&#x6302;&#x8F7D;&#x8FDB;&#x884C;&#x6279;&#x91CF;&#x521B;&#x5EFA;strm&#x6587;&#x4EF6;&#x4F9B;emby&#x3001;jellyfin&#x7B49;&#x6D41;&#x5A92;&#x4F53;&#x670D;&#x52A1;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x9879;&#x76EE;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:18080]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1746432500</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Container Port 1" Target="5000" Default="5000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Container Variable 3" Target="PYTHON_VERSION" Default="3.9.20" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3.9.20</Config>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/alist-strm/config</Config>
+  <Config Name="web" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">18080</Config>
+  <Config Name="Host Path 2" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/alist-strm/data</Config>
+</Container>

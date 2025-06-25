@@ -19,7 +19,7 @@ https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1704705368</DateInstalled>
+  <DateInstalled>1725268304</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -27,9 +27,9 @@ https://hub.docker.com/r/jxxghp/moviepilot/</Overview>
   <Config Name="AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
   <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
-  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">hddolby</Config>
-  <Config Name="HDDOLBY_ID" Target="HDDOLBY_ID" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">29176</Config>
-  <Config Name="HDDOLBY_PASSKEY" Target="HDDOLBY_PASSKEY" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">7608a36c2efd15b14f0869953f757e07</Config>
+  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">iyuu</Config>
+  <Config Name="IYUU_SIGN" Target="IYUU_SIGN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">IYUU7317Taf6a5c9204d7e3dbf169556ff8f85d8903379ca5</Config>
+  <Config Name="IYUU_OO1" Target="IYUU_OO1" Default="" Mode="" Description="&#x5907;&#x7528;" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
   <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>

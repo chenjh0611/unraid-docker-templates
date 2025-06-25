@@ -23,7 +23,7 @@ Oray &#x5B98;&#x7F51;&#xFF1A;https://www.oray.com&#xD;
   <ExtraParams>--device=/dev/net/tun --cap-add NET_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699171816</DateInstalled>
+  <DateInstalled>1727976908</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

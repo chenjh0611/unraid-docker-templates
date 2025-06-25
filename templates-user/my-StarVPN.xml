@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>StarVPN</Name>
-  <Repository>registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:5.0.3</Repository>
+  <Repository>registry.cn-beijing.aliyuncs.com/ld_beijing/stars.client:5.1.1</Repository>
   <Registry>https://hub.docker.com/r/xianwei2022/stars.client</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1723737227</DateInstalled>
+  <DateInstalled>1746374918</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

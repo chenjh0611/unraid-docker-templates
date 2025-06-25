@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MoviePilot-v2</Name>
+  <Repository>jxxghp/moviepilot-v2:2.5.8</Repository>
+  <Registry>https://hub.docker.com/r/jxxghp/moviepilot-v2</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jxxghp/moviepilot/</Support>
+  <Project/>
+  <Overview>NAS&#x5A92;&#x4F53;&#x5E93;&#x81EA;&#x52A8;&#x5316;&#x7BA1;&#x7406;&#x5DE5;&#x5177; V2&#x7248;&#x672C;&#xD;
+&#x8BF4;&#x660E;&#x6307;&#x5F15;&#xFF1A;https://movie-pilot.org&#x2060;&#x2060;&#xD;
+&#x540E;&#x7AEF;&#x9879;&#x76EE;&#xFF1A;https://github.com/jxxghp/MoviePilot&#x2060;&#xD;
+&#x524D;&#x7AEF;&#x9879;&#x76EE;&#xFF1A;https://github.com/jxxghp/MoviePilot-Frontend&#x2060;</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Moviepilot_A.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1750837693</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB_PORT" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
+  <Config Name="AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
+  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="IYUU_SIGN" Target="IYUU_SIGN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SUPERUSER" Target="SUPERUSER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
+  <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
+  <Config Name="&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/PT" Default="" Mode="rw" Description="&#x5C06;&#x5BBF;&#x4E3B;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /mnt&#xFF0C;&#x53EF;&#x70B9;&#x51FB; EDIT &#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF1B;&#x5982;&#x6709;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x9700;&#x6620;&#x5C04;&#x8BF7;&#x70B9;&#x51FB;&#x4E0B;&#x65B9; Add another Path &#x6DFB;&#x52A0; Path &#x7C7B;&#x578B;&#x914D;&#x7F6E;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="Path: /adults" Target="/adults" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
+  <Config Name="Path: /skyhawk4t" Target="/mnt/skyhawk4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
+  <Config Name="Path: /config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot2/config</Config>
+  <Config Name="Path: /core" Target="/moviepilot/.cache/ms-playwright" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot2/core</Config>
+  <Config Name="Path: /docker" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+</Container>

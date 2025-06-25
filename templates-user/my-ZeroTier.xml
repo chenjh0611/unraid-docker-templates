@@ -17,12 +17,11 @@
   <Category>Network:DNS Network:Management Network:VPN</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/zerotier.xml</TemplateURL>
-  <!-- <Icon>https://raw.githubusercontent.com/Spikhalskiy/docker-templates/master/images/zerotier_ico.png</Icon> -->
   <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Zerotier_A.png</Icon>
   <ExtraParams>--device=/dev/net/tun --cap-add=NET_ADMIN --cap-add=SYS_ADMIN</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699027163</DateInstalled>
+  <DateInstalled>1727976834</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

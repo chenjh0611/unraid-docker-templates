@@ -3,7 +3,7 @@
   <Name>IYUUPlusDev</Name>
   <Repository>iyuucn/iyuuplus-dev:latest</Repository>
   <Registry>https://registry.hub.docker.com/r/iyuucn/iyuuplus-dev</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1725248707</DateInstalled>
+  <DateInstalled>1725501767</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

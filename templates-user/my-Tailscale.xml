@@ -38,13 +38,13 @@ To create an ephemeral node:    &#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1722393383</DateInstalled>
+  <DateInstalled>1742488960</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="State Storage" Target="/state" Default="/mnt/user/appdata/tailscale" Mode="rw" Description="Path to store Tailscale state. Leave blank for ephemeral nodes." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tailscale</Config>
   <Config Name="Hostname" Target="TS_HOSTNAME" Default="unraid-docker" Mode="" Description="Name to be assigned to node on the tailnet." Type="Variable" Display="always-hide" Required="true" Mask="false">unraid-docker</Config>
   <Config Name="Authentication Key" Target="TS_AUTHKEY" Default="" Mode="" Description="Authentication key to use to join the tailnet. Required for ephemeral nodes. Only used on first start if state is persistent." Type="Variable" Display="always" Required="false" Mask="true"/>
-  <Config Name="Extra Arguments" Target="TS_EXTRA_ARGS" Default="" Mode="" Description="Extra arguments to pass via tailscale set." Type="Variable" Display="advanced-hide" Required="false" Mask="false">--accept-dns=false --accept-routes --advertise-routes=192.168.2.0/24 --advertise-exit-node=false</Config>
+  <Config Name="Extra Arguments" Target="TS_EXTRA_ARGS" Default="" Mode="" Description="Extra arguments to pass via tailscale set." Type="Variable" Display="advanced-hide" Required="false" Mask="false">--accept-dns=false  --advertise-exit-node=false</Config>
   <Config Name="TS_STATE_DIR" Target="TS_STATE_DIR" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/state</Config>
 </Container>
