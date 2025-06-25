@@ -20,7 +20,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1750837693</DateInstalled>
+  <DateInstalled>1750844060</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -28,13 +28,13 @@
   <Config Name="NGINX_PORT" Target="NGINX_PORT" Default="3000" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3000</Config>
   <Config Name="API_PORT" Target="PORT" Default="3001" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">3001</Config>
   <Config Name="AUTO_UPDATE" Target="MOVIEPILOT_AUTO_UPDATE" Default="release" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">release</Config>
-  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AUTH_SITE" Target="AUTH_SITE" Default="iyuu" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">iyuu</Config>
   <Config Name="IYUU_SIGN" Target="IYUU_SIGN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="SUPERUSER" Target="SUPERUSER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="PROXY_HOST" Target="PROXY_HOST" Default="" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="HOME_DIR" Target="HOME" Default="/moviepilot" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/moviepilot</Config>
   <Config Name="CONFIG_DIR" Target="CONFIG_DIR" Default="/config" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">/config</Config>
-  <Config Name="&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/PT" Default="" Mode="rw" Description="&#x5C06;&#x5BBF;&#x4E3B;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /mnt&#xFF0C;&#x53EF;&#x70B9;&#x51FB; EDIT &#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF1B;&#x5982;&#x6709;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x9700;&#x6620;&#x5C04;&#x8BF7;&#x70B9;&#x51FB;&#x4E0B;&#x65B9; Add another Path &#x6DFB;&#x52A0; Path &#x7C7B;&#x578B;&#x914D;&#x7F6E;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
+  <Config Name="&#x76EE;&#x5F55;&#x6620;&#x5C04;" Target="/pt" Default="" Mode="rw" Description="&#x5C06;&#x5BBF;&#x4E3B;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;&#x5BB9;&#x5668;&#x4E2D;&#x7684; /mnt&#xFF0C;&#x53EF;&#x70B9;&#x51FB; EDIT &#x81EA;&#x884C;&#x4FEE;&#x6539;&#xFF1B;&#x5982;&#x6709;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#x9700;&#x6620;&#x5C04;&#x8BF7;&#x70B9;&#x51FB;&#x4E0B;&#x65B9; Add another Path &#x6DFB;&#x52A0; Path &#x7C7B;&#x578B;&#x914D;&#x7F6E;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pt</Config>
   <Config Name="Path: /adults" Target="/adults" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/adults</Config>
   <Config Name="Path: /skyhawk4t" Target="/mnt/skyhawk4t" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/skyhawk4t</Config>
   <Config Name="Path: /config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/moviepilot2/config</Config>
