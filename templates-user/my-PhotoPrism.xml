@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>PhotoPrism</Name>
-  <Repository>photoprism/photoprism</Repository>
+  <Repository>registry.cn-shenzhen.aliyuncs.com/skyheng/photoprism-photoprism</Repository>
   <Registry>https://hub.docker.com/r/photoprism/photoprism</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -21,7 +21,7 @@ Database lockups: If you got problems where the database lockes up you should sw
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1699805872</DateInstalled>
+  <DateInstalled>1776394694</DateInstalled>
   <DonateText>If you like my work please </DonateText>
   <DonateLink>https://www.paypal.me/photoprism</DonateLink>
   <Requires/>

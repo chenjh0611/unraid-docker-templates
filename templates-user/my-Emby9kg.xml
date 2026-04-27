@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Emby9kg</Name>
-  <Repository>lovechen/embyserver</Repository>
+  <Repository>registry.cn-shenzhen.aliyuncs.com/skyheng/amilys-embyserver:4.9.1.90</Repository>
   <Registry>https://registry.hub.docker.com/r/lovechen/embyserver</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -25,7 +25,7 @@
     GIDLIST&#xD;
     &#x6765;&#x9002;&#x914D;&#x4F60;&#x7684;&#x7CFB;&#x7EDF;,&#x83B7;&#x53D6;&#x663E;&#x5361;&#x6743;&#x9650;&#xD;
     &#x4F60;&#x53EF;&#x4EE5;&#x7528;id&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xD;
-&#xD;
+    &#x539F;&#x6765;&#x4ED3;&#x5E93;&#xFF1A;lovechen/embyserver&#xD;
 </Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8098]/</WebUI>
@@ -34,7 +34,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1728061536</DateInstalled>
+  <DateInstalled>1770564531</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

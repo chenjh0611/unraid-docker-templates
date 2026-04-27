@@ -31,7 +31,7 @@
   <Config Name="Path 2" Target="/adults" Default="/mnt/user/adults" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/adults</Config>
   <Config Name="Path 3" Target="/skyhawk4t" Default="/mnt/user/skyhawk4t" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/skyhawk4t</Config>
   <Config Name="Path 4" Target="/9kg" Default="/mnt/user/9kg" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/9kg</Config>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
