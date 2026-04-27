@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>MusicTag</Name>
-  <Repository>xhongc/music_tag_web:latest</Repository>
+  <Repository>xhongc/music_tag_web:2.7.1</Repository>
   <Registry>https://hub.docker.com/r/xhongc/music_tag_web</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -16,11 +16,11 @@ https://github.com/xhongc/music-tag-web</Overview>
   <Category>Other:</Category>
   <WebUI>http://[IP]:[PORT:8002]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/MyFaith/unraid-templates/master/cookiecloud/cookiecloud.xml</TemplateURL>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Musictag_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/musictag-1.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1746283363</DateInstalled>
+  <DateInstalled>1776784731</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>

@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Emby9kg</Name>
   <Repository>registry.cn-shenzhen.aliyuncs.com/skyheng/amilys-embyserver:4.9.1.90</Repository>
-  <Registry>https://registry.hub.docker.com/r/lovechen/embyserver</Registry>
+  <Registry>https://hub.docker.com/r/amilys/embyserver</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -30,11 +30,11 @@
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8098]/</WebUI>
   <TemplateURL/>
-  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/Emby_A.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/xushier/HD-Icons/border-radius/emby-1.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1770564531</DateInstalled>
+  <DateInstalled>1776785000</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
